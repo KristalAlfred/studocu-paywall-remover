@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Studocu Premium",
+    "version": "1.0",
+    "description": "Remove the paywall on Studocu!",
+    "content_scripts": [
+        {
+            "js": [
+                "scripts/content.js"
+            ],
+            "matches": [
+                "https://www.studocu.com/*/document/*"
+            ]
+        }
+    ]
+}
