@@ -1,6 +1,6 @@
 {
     "manifest_version": 3,
-    "name": "Studocu Premium",
+    "name": "Studocu Paywall Remover",
     "version": "0.0.0.1",
     "description": "Removes the paywall on Studocu.com documents!",
     "content_scripts": [
