@@ -18,4 +18,4 @@ setTimeout(() => {
             page.style.filter = 'none';
         });
     }
-}, 1000);
+}, 200);
