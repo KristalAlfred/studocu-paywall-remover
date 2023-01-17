@@ -1,4 +1,6 @@
 setTimeout(() => {
+
+    // Studocu lazy loads the content, so this approach doesn't work
     document.body = document.body.cloneNode(true);
 
     const paywall = document.querySelector('._60e676a00207');
@@ -14,8 +16,8 @@ setTimeout(() => {
     const pages = document.querySelectorAll('.page-content');
     if (pages != null) {
         pages.forEach(page => {
-            page.classList.remove('page-content');
             page.style.filter = 'none';
+            page.style.removeProperty('filter');
         });
     }
 }, 200);
