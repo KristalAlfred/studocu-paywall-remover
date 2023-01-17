@@ -15,13 +15,15 @@ if (overlayItems != null) {
 
 
 const config = { childList: true };
-
 const callback = (mutationList, _) => {
     for (const mutation of mutationList) {
         if (mutation.addedNodes.length > 0) {
             const element = mutation.target;
+
+            // Wait a bit for the content to load.
             setTimeout(() => {
-                if (element.children.length > 0) {
+                const contentLoaded = element.children.length > 0;
+                if (contentLoaded) {
                     const copy = element.cloneNode(true);
                     copy.style.filter = 'none';
                     copy.style.removeProperty('filter');
