@@ -1,3 +1,6 @@
+// Quickfix to let docuemnts small enough have time to load before removing the paywall.
+// To make this a bit more robust, we should detect when a page is loaded and only then
+// remove the blur from it.
 setTimeout(() => {
     const documentWrapper = document.getElementById('document-wrapper');
     if (documentWrapper != null) {
