@@ -1,7 +1,8 @@
 setTimeout(() => {
-
-    // Studocu lazy loads the content, so this approach doesn't work
-    document.body = document.body.cloneNode(true);
+    const documentWrapper = document.getElementById('document-wrapper');
+    if (documentWrapper != null) {
+        documentWrapper.parentNode.replaceChild(documentWrapper.cloneNode(true), documentWrapper);
+    }
 
     const paywall = document.querySelector('._60e676a00207');
     if (paywall != null) {
