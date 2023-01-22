@@ -5,6 +5,9 @@
     "description": "Removes the paywall on Studocu.com documents!",
     "content_scripts": [
         {
+            "css": [
+                "styles/no_blur.css"
+            ],
             "js": [
                 "scripts/content.js"
             ],
