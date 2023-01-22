@@ -1,10 +1,9 @@
-// TODO: Find a more robust way to deal with these.
-const paywall = document.querySelector('._60e676a00207');
+const paywall = document.querySelector('#document-wrapper').firstChild;
 if (paywall != null) {
     paywall.style.display = 'none';
 }
 
-// TODO: Find a more robust way to deal with these.
+// Hacky but works for now!
 const overlayItems = document.querySelectorAll('._869f7c361ca9');
 if (overlayItems != null) {
     overlayItems.forEach(item => item.style.display = 'none');
